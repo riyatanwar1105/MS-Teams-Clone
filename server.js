@@ -6,7 +6,7 @@ const server = require("http").Server(app);             // Creating http server 
 const { v4: uuidv4 } = require("uuid");                 // Importing uuuid
 const io = require("socket.io")(server);                // Importing socket.io - a javascript library
 
-const { ExpressPeerServer } = require("peer");          // Importing peerJS
+const { ExpressPeerServer } = require("peer");          // Importing peer.JS
 const peerServer = ExpressPeerServer(server, {          // Combining peerJS with express app 
   debug: true,
 });
